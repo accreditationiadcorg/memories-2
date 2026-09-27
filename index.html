@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ذكرياتنا</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       Header
+  ========================== -->
+
+  <header class="hero">
+
+    <nav>
+      <b>ذكرياتنا ♥</b>
+
+      <a href="#memories">
+        الذكريات
+      </a>
+    </nav>
+
+
+    <div class="hero-grid">
+
+      <div class="banner">
+        <img
+          src="images/banner.jpg"
+          alt="ذكرياتنا"
+        >
+      </div>
+
+
+      <div class="intro">
+
+        <small>
+          A COLLECTION OF MOMENTS
+        </small>
+
+        <h1>
+          كل صورة<br>
+          <i>وراها حدوتة</i>
+        </h1>
+
+        <p>
+          كل الحواديت واكثر شاهدة على اجمل حدوتة.
+        </p>
+
+        <a href="#memories">
+          اكتشف الذكريات ↓
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="scroll">
+      SCROLL
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       Memories
+  ========================== -->
+
+  <main id="memories">
+
+    <div class="head">
+
+      <div>
+
+        <small>
+          MEMORY ALBUMS
+        </small>
+
+        <h2>
+          لحظاتنا
+        </h2>
+
+      </div>
+
+      <span id="count"></span>
+
+    </div>
+
+
+    <section id="events"></section>
+
+  </main>
+
+
+  <!-- =========================
+       Memory Modal
+  ========================== -->
+
+  <div
+    class="modal"
+    id="modal"
+  >
+
+    <button
+      id="close"
+      type="button"
+    >
+      ×
+    </button>
+
+
+    <div class="modalbox">
+
+      <small>
+        MEMORY
+      </small>
+
+      <h2 id="title"></h2>
+
+      <p id="num"></p>
+
+      <div id="gallery"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       Music Player
+  ========================== -->
+
+  <div class="music-player">
+
+    <div class="music-info">
+
+      <div class="music-icon">
+        🎵
+      </div>
+
+      <div>
+
+        <div class="music-title">
+          ذكرياتنا ❤️
+        </div>
+
+        <div
+          class="music-status"
+          id="musicStatus"
+        >
+          اضغط تشغيل 🎶
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Play / Pause -->
+
+    <button
+      id="musicBtn"
+      class="music-btn"
+      type="button"
+    >
+      ▶
+    </button>
+
+
+    <!-- Progress -->
+
+    <div class="music-progress">
+
+      <input
+        type="range"
+        id="musicProgress"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+      >
+
+    </div>
+
+
+    <!-- Volume -->
+
+    <div class="music-volume">
+
+      🔊
+
+      <input
+        type="range"
+        id="musicVolume"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.7"
+      >
+
+    </div>
+
+
+    <!-- Audio -->
+
+    <audio
+      id="memoryMusic"
+      preload="auto"
+      loop
+    >
+
+      <source
+        src="music/memories.mp3"
+        type="audio/mpeg"
+      >
+
+      متصفحك لا يدعم تشغيل الصوت.
+
+    </audio>
+
+  </div>
+
+
+  <!-- =========================
+       JavaScript
+  ========================== -->
+
+  <script src="photos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
